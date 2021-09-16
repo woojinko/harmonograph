@@ -1,7 +1,11 @@
 body {
 	margin: 0px;
 	font-family: sans-serif;
-	background-color: #ffe;
+	/* background-color: #63D471; */
+	/* background-color: #9B7EDE; */
+	background-color: #EFBB43;
+
+
 }
 
 th {
@@ -16,7 +20,8 @@ td.main {
 h1 {
 	margin: 0em 0em;
 	padding: 0.2em;
-	background-color: #ffc;
+	/* background-color: #63D471; */
+	background-color: #5FD36C;
 }
 
 .right {
@@ -32,7 +37,8 @@ p {
 }
 
 .output {
-	background-color: #fff;
+	background-color: #FF4766;
+	/* background-color: #5ED8E8; */
 	border: 2px solid #ffa;
 }
 
@@ -40,11 +46,14 @@ p {
 .output.overview {
 	display: block;
 	margin-bottom: 20px;
+	background-color: #FF4766;
+	/* background-color: #5ED8E8; */
 }
 
 .output.thumbnail {
 	width: 64px;
 	height: 64px;
+
 }
 
 table {

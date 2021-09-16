@@ -12,6 +12,9 @@ var overview, overc;
 var startStop, permalink;
 
 var intervalId = null;
+var strokeColor = "#5ED8E8";
+// var strokeColor = "#FF4766";
+
 
 function CanvasRenderer(canvas, drawCircle) {
 	this.canvas = canvas;
@@ -28,7 +31,8 @@ CanvasRenderer.prototype.clear = function() {
 
 	context.setTransform(1, 0, 0, 1, 0, 0);
 	context.clearRect(0, 0, width, height);
-	context.strokeStyle = '#000';
+	// context.strokeStyle = '#000';
+	context.strokeStyle = strokeColor;
 	context.lineWidth = w;
 	context.lineCap = 'round';
 	context.lineJoin = 'round';
@@ -326,8 +330,10 @@ function drawOverview(variables) {
 	overc.setTransform(scale, 0, 0, scale, overview.width * 0.2, overview.width * 0.2);
 	
 	overc.lineWidth = 5;
-	overc.strokeStyle = '#000';
-	overc.fillStyle = '#000';
+	// overc.strokeStyle = '#000';
+	overc.strokeStyle = strokeColor;
+	// overc.fillStyle = '#000';
+	overc.fillStyle = strokeColor;
 	overc.font = 'italic 80px sans-serif';
 	overc.textBaseline = 'bottom';
 
